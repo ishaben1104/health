@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+      <TextView
+          android:id="@+id/heading"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_alignParentTop="true"
+          android:text="VIP Card Payment"
+          android:layout_marginBottom="20dp"
+          android:textAlignment="center"
+          android:textColor="#034C81"
+          android:textSize="24sp" />
+
+      <ImageView
+          android:id="@+id/imageView"
+          android:layout_width="match_parent"
+          android:layout_height="221dp"
+          android:layout_marginBottom="20dp"
+          app:srcCompat="@drawable/dummy_card" />
+
+      <EditText
+          android:id="@+id/cardNumber"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:background="@drawable/border"
+          android:hint="Card Number"
+          android:inputType="number"
+          android:maxLength="16"
+          android:paddingStart="10dp" />
+
+      <EditText
+          android:id="@+id/cardHolderName"
+          android:layout_width="match_parent"
+          android:layout_height="50dp"
+          android:layout_marginBottom="15dp"
+          android:layout_marginLeft="5dp"
+          android:layout_marginRight="5dp"
+          android:background="@drawable/border"
+          android:hint="Card holder name"
+          android:paddingStart="10dp" />
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/expiryMonth"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:hint="MM"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingStart="10dp" />
+
+        <EditText
+            android:id="@+id/expiryYear"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:hint="YYYY"
+            android:inputType="number"
+            android:maxLength="4"
+            android:paddingStart="10dp"/>
+
+        <EditText
+            android:id="@+id/cardCVV"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/border"
+            android:hint="CVV"
+            android:inputType="number"
+            android:maxLength="3"
+            android:paddingStart="10dp"/>
+      </LinearLayout>
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#034c81"
+            android:text="Submit"
+            android:textColor="#fff" />
+    </LinearLayout>
+
+  </RelativeLayout>

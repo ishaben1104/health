@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Notification menu item -->
+    <item
+        android:id="@+id/notifications"
+        android:icon="@drawable/notification_icon"
+        android:title="Notifications"
+        app:showAsAction="ifRoom">
+        <!-- Static notification list -->
+        <menu>
+            <item
+                android:id="@+id/notification1"
+                android:title="Notification 1" />
+            <item
+                android:id="@+id/notification2"
+                android:title="Notification 2" />
+            <!-- Add more notifications as needed -->
+        </menu>
+    </item>
+
+    <!-- Logout menu item -->
+    <item
+        android:id="@+id/logout"
+        android:title="Logout"
+        app:showAsAction="never" />
+</menu>
