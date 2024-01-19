@@ -131,7 +131,7 @@ class DoctorAvailabilityActivity : AppCompatActivity() {
 
             val intent = Intent(
                 this@DoctorAvailabilityActivity,
-                WelcomeActivity::class.java
+                PatientWelcomeActivity::class.java
             )
             startActivity(intent)
             finish()

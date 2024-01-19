@@ -6,7 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
 import com.google.firebase.database.FirebaseDatabase
-import java.text.SimpleDateFormat
 import java.util.Calendar
 
 class PaymentActivity : AppCompatActivity() {
@@ -58,7 +57,7 @@ class PaymentActivity : AppCompatActivity() {
                             showToast("Failed to update payment. ${it.message}")
                         }
                     // Payment mode, navigate to the welcome activity
-                    val intent = Intent(this@PaymentActivity, WelcomeActivity::class.java)
+                    val intent = Intent(this@PaymentActivity, PatientWelcomeActivity::class.java)
                     startActivity(intent)
                 }
 

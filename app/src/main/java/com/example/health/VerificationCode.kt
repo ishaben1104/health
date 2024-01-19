@@ -59,7 +59,7 @@ class VerificationCode : AppCompatActivity() {
             }
             // Validate the entered verification code
             if (validateVerificationCode()) {
-                val intent = Intent(this@VerificationCode, WelcomeActivity::class.java)
+                val intent = Intent(this@VerificationCode, PatientWelcomeActivity::class.java)
                 startActivity(intent)
                 hideError()
                 Toast.makeText(this, "Verification successful", Toast.LENGTH_SHORT).show()
@@ -79,11 +79,6 @@ class VerificationCode : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.app_bar_search -> {
-                // Handle the Search action
-                //performSearch()
-                return true
-            }
             R.id.logout -> {
                 // Handle the Logout action (e.g., navigate to the logout screen)
                 //performLogout()

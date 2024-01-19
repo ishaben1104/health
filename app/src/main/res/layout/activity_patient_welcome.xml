@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/llMain"
-    tools:context=".WelcomeActivity">
+    tools:context=".PatientWelcomeActivity">
 
     <TextView
         android:id="@+id/welcomeTextView"

@@ -4,16 +4,15 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.*
 import android.view.*
 import android.widget.*
-import androidx.appcompat.widget.SearchView
 import androidx.fragment.app.Fragment
 import androidx.core.content.ContextCompat
 
 private lateinit var welcomeTextView: TextView
 
-class WelcomeActivity : AppCompatActivity() {
+class PatientWelcomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_welcome)
+        setContentView(R.layout.activity_patient_welcome)
 
         // this helped to show app bar and icon
         supportActionBar!!.setDisplayShowTitleEnabled(false) // this is to hide project name
@@ -70,12 +69,6 @@ class WelcomeActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
-            R.id.app_bar_search -> {
-                // Handle the Search action
-                //performSearch()
-                return true
-            }
-
             R.id.logout -> {
                 // Handle the Logout action (e.g., navigate to the logout screen)
                 //performLogout()
